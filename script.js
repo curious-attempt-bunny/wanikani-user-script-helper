@@ -1,3 +1,4 @@
+console.log("WKHelper running!");
 if (!window.WKHelper || !window.WKHelper.init_callbacks) {
     console.log("WKHelper must be loaded via the loader.js script.");
     return;
