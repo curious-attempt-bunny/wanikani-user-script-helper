@@ -14,6 +14,6 @@ window.WKHelper.init = function(gm_info, callback) {
   console.log("Appending WKHelper script...");
   js = d.createElement(s);
   js.id = id;
-  js.src = "//raw.githubusercontent.com/curious-attempt-bunny/wanikani-user-script-helper/master/script.js";
+  js.src = "//https://curious-attempt-bunny.github.io/wanikani-user-script-helper/script.js";
   finaljs.parentNode.insertBefore(js, finaljs);
 }(document, 'script', 'wanikani-user-script-helper'));
