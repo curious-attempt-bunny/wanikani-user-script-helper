@@ -5,5 +5,6 @@ window.WKHelper.init = function(gm_info, callback) {
 }
 
 var scriptElement = document.createElement('script');
+console.dir(scriptElement);
 scriptElement.setAttribute("type","text/javascript")
 scriptElement.setAttribute("src", "https://raw.githubusercontent.com/curious-attempt-bunny/wanikani-user-script-helper/master/script.js")
