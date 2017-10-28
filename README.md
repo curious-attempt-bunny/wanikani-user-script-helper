@@ -10,14 +10,17 @@ None just yet!
 
 * Add the loader to your tampermonkey script:
 
-    // @require      https://curious-attempt-bunny.github.io/wanikani-user-script-helper/loader.js
-
+```javascript
+// @require      https://curious-attempt-bunny.github.io/wanikani-user-script-helper/loader.js
+```
 * Wrap all your code in the initialization function:
 
-    (function() {
-        'use strict';
+```javascript
+(function() {
+    'use strict';
 
-        window.WKHelper.init(GM_info, function() {
-            // Your code here.
-        });
-    })();
+    window.WKHelper.init(GM_info, function() {
+        // Your code here.
+    });
+})();
+```    
