@@ -9,7 +9,8 @@ console.log(document);
 
 console.log("Creating script element!");
 var scriptElement = document.createElement('script');
-console.log("Created script element", scriptElement);
+console.log("Created script element:");
+console.dir(scriptElement);
 
 // scriptElement.setAttribute("type","text/javascript")
 // scriptElement.setAttribute("src", "https://raw.githubusercontent.com/curious-attempt-bunny/wanikani-user-script-helper/master/script.js")
