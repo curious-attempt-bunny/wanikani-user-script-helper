@@ -1,3 +1,3 @@
 window.WKHelper = {
-    test: "Hello world!"
+    test: "Hello world, I updated!"
 };
