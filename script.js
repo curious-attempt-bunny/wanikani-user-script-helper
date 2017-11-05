@@ -10,11 +10,13 @@ if (!window.WKHelper || !window.WKHelper.init_callbacks) {
         options = options || {}
         retries = options.retries || 3;
         timeout = options.timeout || 3000;
+        headers = options.headers || {};
 
         function action(resolve, reject) {
             $.ajax({
                 url: url,
-                timeout: timeout
+                timeout: timeout,
+                headers: headers
             })
             .done(function(data, status){
                 //console.log(status, data);
