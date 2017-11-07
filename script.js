@@ -60,7 +60,7 @@ if (!window.WKHelper || !window.WKHelper.init_callbacks) {
 
                 // Extract the API key.
                 window.WKHelper.api_key_v2 = page.find('#user_api_key_v2').attr('value');
-                if (typeof window.WKHelper.api_key_v2 !== 'string' || window.WKHelper.api_key_v2 !== 36) {
+                if (typeof window.WKHelper.api_key_v2 !== 'string' || window.WKHelper.api_key_v2.length !== 36) {
                     return reject(new Error('generate_apikey'));
                 }
 
