@@ -49,7 +49,7 @@ if (!window.WKHelper || !window.WKHelper.init_callbacks) {
             if (typeof window.WKHelper.api_key_v2 === 'string' && window.WKHelper.api_key_v2.length == 36) return resolve();
 
             // status_div.html('Fetching API key...');
-            ajax_retry('/settings/account').then(function(page) {
+            window.WKHelper.ajax_retry('/settings/account').then(function(page) {
 
                 // --[ SUCCESS ]----------------------
                 // Make sure what we got is a web page.
